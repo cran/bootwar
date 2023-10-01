@@ -19,15 +19,15 @@ seed <- 123
 set.seed(seed)
 
 # Shuffle the deck
-ideck <- shuffle_deck(
+adeck <- mmcards::shuffle_deck(
   deck_of_cards = function(x) {as.integer(stats::runif(52, 1, 208))},
   seed = seed
   )
 
-head(ideck)
+head(adeck)
 
 ## -----------------------------------------------------------------------------
-rres <- play_round(cdeck = ideck,
+rres <- play_round(cdeck = adeck,
                    plyr_cv = plyr_cv, plyr_vv = plyr_vv,
                    comp_cv = comp_cv, comp_vv = comp_vv)
 

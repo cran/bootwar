@@ -361,12 +361,12 @@ deck of cards.</p>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(seed)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Shuffle the deck</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>ideck <span class="ot">&lt;-</span> <span class="fu">shuffle_deck</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>adeck <span class="ot">&lt;-</span> mmcards<span class="sc">::</span><span class="fu">shuffle_deck</span>(</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">deck_of_cards =</span> <span class="cf">function</span>(x) {<span class="fu">as.integer</span>(stats<span class="sc">::</span><span class="fu">runif</span>(<span class="dv">52</span>, <span class="dv">1</span>, <span class="dv">208</span>))},</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">seed =</span> seed</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ideck)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(adeck)</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    card value</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7     7    30</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 27   27    99</span></span>
@@ -379,7 +379,7 @@ README.</p>
 </div>
 <div id="play-the-first-round" class="section level3">
 <h3>Play the First Round:</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>rres <span class="ot">&lt;-</span> <span class="fu">play_round</span>(<span class="at">cdeck =</span> ideck,</span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>rres <span class="ot">&lt;-</span> <span class="fu">play_round</span>(<span class="at">cdeck =</span> adeck,</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">plyr_cv =</span> plyr_cv, <span class="at">plyr_vv =</span> plyr_vv,</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">comp_cv =</span> comp_cv, <span class="at">comp_vv =</span> comp_vv)</span></code></pre></div>
 </div>

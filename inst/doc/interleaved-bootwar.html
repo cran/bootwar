@@ -366,7 +366,7 @@ function to return a list of decks.</p>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(seed)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Shuffle the deck</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>ideck <span class="ot">&lt;-</span> <span class="fu">shuffle_deck</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>ideck <span class="ot">&lt;-</span> mmcards<span class="sc">::</span><span class="fu">shuffle_deck</span>(</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">deck_of_cards =</span> <span class="cf">function</span>(x) {<span class="fu">list</span>(<span class="fu">as.integer</span>(stats<span class="sc">::</span><span class="fu">runif</span>(<span class="dv">26</span>, <span class="dv">25</span>, <span class="dv">50</span>)),</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                                    <span class="fu">as.integer</span>(stats<span class="sc">::</span><span class="fu">runif</span>(<span class="dv">26</span>, <span class="dv">35</span>, <span class="dv">55</span>)))},</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">seed =</span> seed</span>
